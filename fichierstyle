@@ -1,7 +1,7 @@
 h1 {font-family: Times New Roman, Arial, sans-serif; color:purple; text-align:center;font-weight:bold;}
 h2 {font-family: Times New Roman, Arial, sans-serif; font-style:italic; color:blue;font-weight:bold;}
-body {color:black; margin-left: 10%; margin-right: 10%; background:#FFFFCC}
-div {color:black;font-family: Times New Roman, Arial, Optima, Tahoma, sans-serif;}
+body {color:black; margin-left: 20%; margin-right: 20%; background:#FFFFCC}
+div {color:red;font-family: Times New Roman, Arial, Optima, Tahoma, sans-serif;}
 a:link {color: black;}
 a:visited {color: blue;}
 a:active {color: red;}
