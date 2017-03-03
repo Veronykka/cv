@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
         <head>
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				
 				<meta charset="UTF-8">
 				<link rel="stylesheet" type="text/css" href="fichierstyle.css" > 
-	</head>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+				
+				<script language="javascript" type="text/javascript" src="cv.js">
+				</script>	
+				
+				
+		</head>
         <body>
 				<p>Menu</p>
 				<nav>
@@ -13,17 +23,21 @@
 						<li><a href="#Experience">Expérience</a></li>
 					</ul>
 				</nav>
-				<div id="Information">
-					<h1>CV</h1>
-					<h2>Information générale</h2>
-                
+				
+					<h1>CV
+					</h1>
+					<h2>Information générale
+					<button style="font-size: 50%;" onclick="afficher('#Information');">cacher</button></h2>
+					<div id="Information">
 						<br><strong>  NOM: GANGUR Veronica</strong>
 						<br>  Adresse : 69007 av.Jean Jaures Lyon
 						<br>  Telephone: 07***
 						<br>  E-mail:v.gangur@yahoo.com
 				</div>
-				<div id="Formation"> 
-					<h2>Formation</h2>
+				
+					<h2>Formation 
+					<button style="font-size: 50%;" onclick="afficher('#Formation');">cacher</button></h2>
+					<div id="Formation"> 
 					<p> 
 					
 							<br>  2016-2017
@@ -39,9 +53,11 @@
 							<br><a href="http://www.finantecorporative.ase.ro/" title="Master 2 Finances">Formation Master Finances D'Entreprise</a>
 							<br> <br> <br>
 				</div>
-				<div id="Experience">
-					<h2>Expérience</h2>
-					<p>
+				
+					<h2>Expérience
+					<button style="font-size: 50%;" onclick="afficher('#Experience');">cacher</button></h2>
+					<div id="Experience">
+						<p>
 							<br>  2015 mars - mai
 							<br>  Stage Master 2, Departement de Recherche-Synthese
 							<br>  Autorite de la Concurrence Roumanie
@@ -49,6 +65,14 @@
 							<br><a href="http://www.consiliulconcurentei.ro/ro/despre-noi.html" title="Stage Master 2"> Page Autorite Concurrence Roumanie</a>
 					</p>
 				</div>
+				
+				<form>
+					<input type="text" name="Nom">Nom</input>
+					<br><input type="text" name="Email" id="email">Email</input>
+					<br><input type="text" name="Téléphone" id="telef">Téléphone </input>
+					<br><textarea type="text" rows="3" cols="40"> Message</textarea>
+					<br><button style="font-size: 100%;" onclick="verification();">Soumission</button>
+				</form>
 				
 							
         </body>
